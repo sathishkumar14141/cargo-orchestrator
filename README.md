@@ -2,6 +2,16 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Running the federated apps locally
+
+The orchestrator opens on a sign-in page at `/signin`; `/` redirects there. Authentication is not connected yet. The workspace dashboard is at `/dashboard`. Master → Branch and Operation → Booking open sample MUI forms and tables; submitted sample records are kept in memory and are not saved to a backend.
+
+```powershell
+npm --prefix apps\orchestrator run build
+```
+
+Start the orchestrator with `npm --prefix apps\orchestrator run dev`.
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
